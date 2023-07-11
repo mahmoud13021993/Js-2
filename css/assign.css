@@ -1,0 +1,13 @@
+h2 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn-primary {
+    transition: background-color 0.3s ;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+}
+.btn-primary:hover {
+    background-color: green !important;
+}
