@@ -18,8 +18,12 @@
 // }
 // document.getElementById("quta").innerHTML= "#"+randcol;
 // }
+var random;
+var genrateQuta;
+var qutaValue = "1";
+var authorValue;
 function changeText() {
-  var genrateQuta= [
+   genrateQuta= [
     {author: 'Jim Rohn', 
      quote: 'Beware of what you become in pursuit of what you want.'
     },
@@ -39,13 +43,17 @@ function changeText() {
      quote: 'Do not take life too seriously. You will not get out alive.'
     },
 ];
-    for(i=0;i<genrateQuta.length;i++) {
-    var random = Math.floor(Math.random() * genrateQuta.length);
+   
+    random = Math.floor(Math.random() * genrateQuta.length);
     qutaValue = genrateQuta[random].quote;
     authorValue = genrateQuta[random].author;
-   }   
-   document.getElementById("quta").innerHTML= `"${qutaValue}" `;
-   document.getElementById("writer").innerHTML= `--${authorValue} `;
+    document.getElementById("quta").innerHTML= `"${genrateQuta[random].quote}" `;
+    document.getElementById("writer").innerHTML= `--${genrateQuta[random].author} `;
+     
+  
+   
 }
+
+
 
 
